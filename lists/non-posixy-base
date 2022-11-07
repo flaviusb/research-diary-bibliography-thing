@@ -1,0 +1,8 @@
+# List where I put papers I'm looking at for other alternatives to base posix assumtions around allocation and process management
+
+"papers/A fork() in the road.pdf"
+"papers/The Alloc Stream Facility: A Redesign of Application-Level Stream IO.pdf"
+# Also, the possibility of async malloc + backpressure
+# link https://twitter.com/flaviusb/status/1553172979089289216
+# link https://github.com/tosc-rs/mnemos-alloc
+# (Not sure how to record 'not a pdf, but relevant to read' stuff, so I'm just doing it in a human readible format alas)
