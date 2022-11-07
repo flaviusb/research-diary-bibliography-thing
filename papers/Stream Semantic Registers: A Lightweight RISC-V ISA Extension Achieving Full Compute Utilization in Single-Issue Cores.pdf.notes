@@ -1,0 +1,2 @@
+Something like this approach might work well for an on-chip micro channel-io, mapped to arbitrary address/bank or filling up a queue or a ring buffer that can be mapped over the top of or drained onto arbitrary address+bank combinations in scratch memory.
+
