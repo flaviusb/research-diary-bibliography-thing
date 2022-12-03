@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+  <title>A Neighborhood of Infinity: Dimensionful Matrices</title>
+
+  <script src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript">(function() { (function(){function b(g){this.t={};this.tick=function(h,m,f){var n=void 0!=f?f:(new Date).getTime();this.t[h]=[n,m];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(q){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var e=(a=window.performance.timing)&&a.responseStart;var p=0<e?new b(e):new b;window.jstiming={Timer:b,load:p};if(a){var c=a.navigationStart;0<c&&e>=c&&(window.jstiming.srt=e-c)}if(a){var d=window.jstiming.load;
+0<c&&e>=c&&(d.tick("_wtsrt",void 0,c),d.tick("wtsrt_","_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<c&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<c&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})();window.tickAboveFold=function(b){var a=0;if(b.offsetParent){do a+=b.offsetTop;while(b=b.offsetParent)}b=a;750>=b&&window.jstiming.load.tick("aft")};var k=!1;function l(){k||(k=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",l,!1):window.attachEvent("onscroll",l);
+ })();</script><script type="text/javascript">function a(){var b=window.location.href,c=b.split("?");switch(c.length){case 1:return b+"?m=1";case 2:return 0<=c[1].search("(^|&)m=")?null:b+"&m=1";default:return null}}var d=navigator.userAgent;if(-1!=d.indexOf("Mobile")&&-1!=d.indexOf("WebKit")&&-1==d.indexOf("iPad")||-1!=d.indexOf("Opera Mini")||-1!=d.indexOf("IEMobile")){var e=a();e&&window.location.replace(e)};
+</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Blogger">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.blogger.com/favicon.ico">
+<link rel="alternate" type="application/atom+xml" title="A Neighborhood of Infinity - Atom" href="http://blog.sigfpe.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="A Neighborhood of Infinity - RSS" href="http://blog.sigfpe.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="A Neighborhood of Infinity - Atom" href="https://www.blogger.com/feeds/11295132/posts/default">
+<link rel="alternate" type="application/atom+xml" title="A Neighborhood of Infinity - Atom" href="http://blog.sigfpe.com/feeds/1593552387558031235/comments/default">
+<link rel="stylesheet" type="text/css" href="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/1601750677-blog_controls.css">
+<link rel="stylesheet" type="text/css" href="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/authorization.css">
+
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#fff;
+  margin:0;
+  padding:40px 20px;
+  font:x-small Georgia,Serif;
+  text-align:center;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+a:link {
+  color:#58a;
+  text-decoration:none;
+  }
+a:visited {
+  color:#969;
+  text-decoration:none;
+  }
+a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+#header {
+  width:660px;
+  margin:0 auto 10px;
+  border:1px solid #ccc;
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:200%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#666;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#c60;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:700px;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Content
+----------------------------------------------- */
+#content {
+  width:660px;
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  }
+#main {
+  width:410px;
+  float:left;
+  }
+#sidebar {
+  width:220px;
+  float:right;
+  }
+
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+  }
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#c60;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post img {
+  padding:4px;
+  border:1px solid #ddd;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:660px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+  </style>
+
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+<!-- --><style type="text/css">@import url(https://www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
+div.b-mobile {display:none;}
+</style>
+
+<style>.gc-bubbleDefault{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important;table-layout:auto!important}.gc-reset{background-color:transparent!important;border:0!important;padding:0!important;margin:0!important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important;vertical-align:top}.pls-dropBL,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%;vertical-align:top}.pls-topLeft{background:inherit!important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit!important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style></head>
+
+<body><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" id="navbar-iframe" name="navbar-iframe" src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/navbar.htm" width="100%" frameborder="0"></iframe></div>
+<script type="text/javascript" src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/platform.js" gapi_processed="true"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d11295132\x26blogName\x3dA+Neighborhood+of+Infinity\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dBLUE\x26layoutType\x3dCLASSIC\x26searchRoot\x3dhttp://blog.sigfpe.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://blog.sigfpe.com/\x26vt\x3d-6561857379822580732',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script>
+
+<div id="header">
+
+  <h1 id="blog-title">
+    <a href="http://blog.sigfpe.com/">
+	A Neighborhood of Infinity
+	</a>
+  </h1>
+  <p id="description"></p>
+
+</div>
+
+<!-- Begin #content -->
+<div id="content">
+
+
+<!-- Begin #main -->
+<div id="main"><div id="main2">
+
+
+
+    
+  <h2 class="date-header">Saturday, August 06, 2016</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="1593552387558031235"></a>
+         
+    <h3 class="post-title">
+	 
+	 Dimensionful Matrices
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div><b>Introduction</b><p>
+Programming languages and libraries for numerical work tend not to place a lot of emphasis on the types of their data.
+For example Matlab, R, Octave, Fortran, and Numpy (but not the now defunct <a href="https://projectfortress.java.net/">Fortress</a>)
+ all tend to treat their data as plain numbers meaning that any time you
+ have a temperature and a mass, say, there is nothing to prevent you 
+adding them.
+</p><p><br>
+I've been wondering how much dimensions (in the sense of <a href="https://en.wikipedia.org/wiki/Dimensional_analysis">dimensional analysis</a>) and units could help with numerical programming.
+As I pointed out on <a href="https://plus.google.com/+DanPiponi/posts/VNkdwwJL4LM">G+</a>
+ recently (which is where I post shorter stuff these days), you don't 
+have to limit dimensions to the standard ones of length, mass, time, 
+dollars and so on.
+Any scale invariance in the equations you're working with can be 
+exploited as a dimension giving you a property that can be statically 
+checked by a compiler.
+</p><p><br>
+There are quite a few libraries to statically check dimensions and units now. For example <a href="http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html">Boost.Units</a> for C++, <a href="https://hackage.haskell.org/package/units">units</a> for Haskell and even <a href="https://github.com/timjb/quantities">quantities</a> for Idris.
+</p><p><br>
+<b>A matrix that breaks things</b></p><p>
+Even if a language supports dimensions, it's typical to define objects 
+like vectors and matrices as homogeneous containers of quantities.
+But have a look at the Wikipedia page on the <a href="https://en.wikipedia.org/wiki/Metric_tensor_%28general_relativity%29">metric tensor</a>.
+There is a matrix
+</p><p><br>
+<img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_015.png" style="vertical-align:middle">
+</p><p><br>
+which has the curious property that 3 entries on the diagonal seem to be
+ dimensionless while the first entry is a squared velocity with 
+dimension <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_035.png" style="vertical-align:middle">.
+This will break many libraries that support units.
+An obvious workaround is to switch to use <a href="https://en.wikipedia.org/wiki/Natural_units">natural units</a>, which is much the same as abandoning the usefulness of dimensions.
+But there's another way, even if it may be tricky to set up with existing languages.
+</p><p><br>
+<b>Heterogeneous vectors and matrices</b></p><p>
+According to a common convention in physics, a 4-vector <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_019.png" style="vertical-align:middle"> has dimensions <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_017.png" style="vertical-align:middle">
+ where I'm using the convention that we can represent the units of a 
+vector or matrix simply as a vector or matrix of dimensions, and here <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_009.png" style="vertical-align:middle"> is time and <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_003.png" style="vertical-align:middle"> is length.
+The metric tensor is used like this: <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_011.png" style="vertical-align:middle"> (where I'm using the Einstein summation convention so the <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_034.png" style="vertical-align:middle">'s and <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart.png" style="vertical-align:middle">'s are summed over).
+If we think of <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_006.png" style="vertical-align:middle"> having units of length squared (it is a pseudo-Riemannian <i>metric</i> after all) then it makes sense to think of <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_029.png" style="vertical-align:middle"> having dimensions given by
+</p><p><br>
+<img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_020.png" style="vertical-align:middle">
+</p><p><br>
+We can write this more succinctly as
+</p><p><br>
+<img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_038.png" style="vertical-align:middle">
+</p><p><br>
+where <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_021.png" style="vertical-align:middle"> is the usual outer product.
+</p><p><br>
+I'll use the notation <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_027.png" style="vertical-align:middle"> to mean <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_030.png" style="vertical-align:middle"> is of type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_022.png" style="vertical-align:middle">. So, for example, <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_016.png" style="vertical-align:middle">. I'll also use pointwise notation for types such as <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_007.png" style="vertical-align:middle"> and <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_018.png" style="vertical-align:middle">.
+</p><p><br>
+Now I can give some general rules. If <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_031.png" style="vertical-align:middle"> is a matrix, <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_010.png" style="vertical-align:middle"> and <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_023.png" style="vertical-align:middle"> are vectors, and <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_039.png" style="vertical-align:middle"> is a scalar, then <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_026.png" style="vertical-align:middle"> only makes sense if <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_037.png" style="vertical-align:middle">.
+Similarly the "inner product" <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_040.png" style="vertical-align:middle"> only makes sense if <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_036.png" style="vertical-align:middle">.
+</p><p><br>
+<b>Generic vectors and matrices</b></p><p>
+Although these kinds of types might be useful if you're dealing with the
+ kind of heterogeneous matrices that appear in relativity, there's 
+another reason they might be useful.
+If you write code (in the imaginary language that supports these 
+structures and understands dimensions and units) to be as generic as 
+possible in the types of the vector and matrix entries, failures to type
+ check will point out parts of the code where there are hidden 
+assumptions, or even errors, about scaling.
+For example, consider a routine to find the inverse of a 3 by 3 matrix.
+Writing this generically as possible means we should write it to operate
+ on a matrix of type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_005.png" style="vertical-align:middle">, say.
+The result should have type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_012.png" style="vertical-align:middle">.
+If this type checks when used with a suitably powerful type checker then
+ it means that if we replace the units for type A, say, with units twice
+ as large, it should have no effect on the result, taking into account 
+those units.
+In this case, it means that if we multiply the numbers of the first row 
+of the input by 0.5 then the numbers of the first column of the output 
+should get multiplied by 2.
+In fact this is a basic property of matrix inverses.
+In other words, this mathematical property of matrix inverses is 
+guaranteed by a type system that can handle units and heterogeneous 
+matrices.
+It would be impossible to write a matrix inverter that type checks and 
+fails to have this property.
+Unfortunately it's still possible to write a matrix inverter that type 
+checks and is incorrect some other way.
+Nonetheless this kind of type system would put a very big constraint on 
+the code and is likely to eliminate many sources of error.
+</p><p><br>
+<b>An example, briefly sketched</b></p><p>
+I thought I'd look at an actual example of a matrix inverter to see what
+ would happen if I used a type checker like the one I've described.
+I looked at the <a href="https://en.wikipedia.org/wiki/Conjugate_gradient_method">conjugate gradient method</a>.
+At the Wikipedia page, note the line
+</p><p><br>
+<img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_025.png" style="vertical-align:middle">
+</p><p><br>
+This would immediately fail to type check because if <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_033.png" style="vertical-align:middle"> is of generic vector type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_014.png" style="vertical-align:middle"> then <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_008.png" style="vertical-align:middle"> isn't the same type as <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_032.png" style="vertical-align:middle"> so they can't be added.
+I won't go into any of the details but the easiest way to patch up this code to make it type check is to introduce a new matrix <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_028.png" style="vertical-align:middle"> of type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_024.png" style="vertical-align:middle"> and besides using it to make this inner product work (replacing the numerator by <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_013.png" style="vertical-align:middle">) we also use <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_028.png" style="vertical-align:middle"> anywhere in the code we need to convert a vector of type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_004.png" style="vertical-align:middle"> to a vector of type <img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/chart_002.png" style="vertical-align:middle">.
+If you try to do this as sparingly as possible you'll end up with a modified algorithm.
+But at first this seems weird.
+Why should this matrix inverse routine rely on someone passing in a second matrix to make it type check?
+And what is this new algorithm anyway?
+Well scroll down the Wikipedia page and you get to the <i>preconditioned</i>
+ conjugate gradient algorithm.
+The extra matrix we need to pass in is the preconditioner.
+This second algorithm would type check.
+Preconditioned conjugate gradient, with a suitable preconditioner, 
+generally performs better than pure conjugate gradient.
+So in this case we're getting slightly more than a check on our code's 
+correctness.
+The type checker for our imaginary language would give a hint on how to 
+make the code perform better.
+There's a reason for this.
+The original conjugate gradient algorithm is implicitly making a choice 
+of units that sets scales along the axes.
+These determine the course taken by the algorithm.
+It's not at all clear that picking these scalings randomly (which is in 
+effect what you're doing if you throw a random problem at the algorithm)
+ is any good.
+It's better to pick a preconditioner adapted to the scale of the problem
+ and the type checker is hinting (or would be if it existed) that you 
+need to do this.
+Compare with the gradient descent algorithm whose <a href="http://www.machinedlearnings.com/2011/06/dimensional-analysis-and-gradient.html">scaling problems are better known</a>.
+</p><p><br>
+<b>But which language?</b></p><p>
+I guess both Agda and Idris could be made to implement what I've described.
+However, I've a hunch it might not be easy to use in practice.
+</p><div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by sigfpe at <a href="http://blog.sigfpe.com/2016/08/dimensionful-matrices.html" title="permanent link">Saturday, August 06, 2016</a></em>
+        <span class="item-action"><a href="https://www.blogger.com/email-post.g?blogID=11295132&amp;postID=1593552387558031235" title="Email Post"><img class="icon-action" alt="" src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/icon18_email.gif" width="18" height="13"></a></span><span class="item-control blog-admin pid-1188793828"><a style="border:none;" href="https://www.blogger.com/post-edit.g?blogID=11295132&amp;postID=1593552387558031235&amp;from=pencil" title="Edit Post"><img class="icon-action" alt="" src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/icon18_edit_allbkg.gif" width="18" height="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+  <div id="comments">
+
+	<a name="comments"></a>
+        <h4>7 Comments:</h4>
+        <dl id="comments-block">
+      
+      <dt class="comment-poster" id="c1016506907200751171"><a name="c1016506907200751171"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/18101186713270599994" rel="nofollow">Jan Van lent</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>George Hart has written a book on this topic called "Multidimensional Analysis".<br>You can find a summary and and an article on his website.<br><br>http://www.georgehart.com/research/multanal.html<br>http://www.georgehart.com/research/tdm.ps<br></p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#1016506907200751171" title="comment permalink">Sunday, 07 August, 2016</a>
+	  <span class="item-control blog-admin pid-1498731287"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=1016506907200751171" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c1927694698777536394"><a name="c1927694698777536394"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/01577860012705910561" rel="nofollow">J-W Maessen</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>The outer product view also corresponds nicely to the view of matrices as linear transformations between two vector spaces.<br><br>I
+ love the analysis of Conjugate Gradient – when working on Fortress we 
+loved to trot this one out (internally, too).  If we'd realized that 
+getting the dimensions right corresponded to preconditioning, it would 
+have made discussing dimensioned matrices with the supercomputing crowd 
+so much easier.  It's still a challenge to turn this into a sparse 
+matrix representation without doing horrifying things with dependent 
+types, though.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#1927694698777536394" title="comment permalink">Sunday, 07 August, 2016</a>
+	  <span class="item-control blog-admin pid-1635731385"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=1927694698777536394" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c1507678181476048002"><a name="c1507678181476048002"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/06662331850663558712" rel="nofollow">Douglas McClean</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>We've tried a few times to implement this in Haskell on top 
+of the dimensional library. It actually works really well in the 
+"forward" direction (determining the dimensions of the results when all 
+input dimensions are known), but can't check any complicated uses that 
+are polymorphic in dimension. I am working on a type checker plugin for 
+GHC to rectify that, but there are a few complications and so my 
+attention got diverted to lower-hanging fruit.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#1507678181476048002" title="comment permalink">Sunday, 07 August, 2016</a>
+	  <span class="item-control blog-admin pid-145475854"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=1507678181476048002" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c4391203914054521603"><a name="c4391203914054521603"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/01183856757175002949" rel="nofollow">rks</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>I once tried, and failed, to work out how to do dimensioned 
+clifford algebra in the particular case of momentum. I've left the 
+incorrect blog post [with prepended mea culpa] at 
+http://grampsgrumps.blogspot.com.au/2014/11/multivector-momentum.html in
+ the hope of inspiring someone. I have a feeling that understanding how 
+to do that correctly would be a useful step.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#4391203914054521603" title="comment permalink">Sunday, 07 August, 2016</a>
+	  <span class="item-control blog-admin pid-1580093949"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=4391203914054521603" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c197629500993350430"><a name="c197629500993350430"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/15921470476730871931" rel="nofollow">Suhail</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>if we were to represent the vectors as hlists in haskell (or 
+in scala via shapeless) we would be able to express these 
+multidimensional arrays. we could then have interpreters which may 
+"compile" them down to some target (for the ones where the types 
+conformed).</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#197629500993350430" title="comment permalink">Wednesday, 10 August, 2016</a>
+	  <span class="item-control blog-admin pid-543115329"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=197629500993350430" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c8037564606593710341"><a name="c8037564606593710341"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/02991214367108471744" rel="nofollow">rgrig</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>If you don't know already, you might want to see what F# 
+does: 
+https://blogs.msdn.microsoft.com/andrewkennedy/2008/08/29/units-of-measure-in-f-part-one-introducing-units/<br><br>Though, no matrices, AFAIK.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#8037564606593710341" title="comment permalink">Saturday, 13 August, 2016</a>
+	  <span class="item-control blog-admin pid-680596941"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=8037564606593710341" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c2213965258661273752"><a name="c2213965258661273752"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="A%20Neighborhood%20of%20Infinity%20Dimensionful%20Matrices_files/b16-rounded.gif" alt="Blogger" style="display:inline;"></span>&nbsp;<a href="https://www.blogger.com/profile/03049597568852739302" rel="nofollow">mdsumner</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>R effort here: https://cran.r-project.org/web/packages/units/index.html</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#2213965258661273752" title="comment permalink">Thursday, 30 March, 2017</a>
+	  <span class="item-control blog-admin pid-697691085"><a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=11295132&amp;postID=2213965258661273752" title="Delete Comment"><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+    </dl>
+		<p class="comment-timestamp">
+
+    <a class="comment-link" href="https://www.blogger.com/comment.g?blogID=11295132&amp;postID=1593552387558031235">Post a Comment</a>
+    </p>
+    
+   
+
+		<p class="comment-timestamp">
+	<a href="http://blog.sigfpe.com/">&lt;&lt; Home</a>
+    </p>
+    </div>
+
+
+
+  <!-- End #comments -->
+
+
+</div></div>
+<!-- End #main -->
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+<div id="sidebar"><div id="sidebar2">
+  
+  
+  <!-- Begin #profile-container -->
+
+   <div id="profile-container"><h2 class="sidebar-title">About Me</h2>
+<dl class="profile-datablock">
+<dd class="profile-data"><strong>Name:</strong> <a rel="author" href="https://www.blogger.com/profile/08096190433222340957"> sigfpe </a></dd>
+</dl>
+
+<p class="profile-link"><a rel="author" href="https://www.blogger.com/profile/08096190433222340957">View my complete profile</a></p></div>
+   
+  <!-- End #profile -->
+    
+
+  
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://blog.sigfpe.com/2014/05/cofree-meets-free.html">Cofree meets Free</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2014/05/types-and-two-approaches-to-problem.html">Types, and two approaches to problem solving</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2014/04/the-monad-called-free.html">The Monad called Free</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2014/02/reinversion-revisited.html">Reinversion Revisited</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2013/10/distributed-computing-with-alien.html">Distributed computing with alien technology</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2013/10/what-stops-us-defining-truth.html">What stops us defining Truth?</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2013/04/why-heisenberg-cant-stop-atomic-collapse.html">Why Heisenberg can't stop atomic collapse</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2013/01/aliasing-and-heisenberg-uncertainty.html">Aliasing and the Heisenberg uncertainty principle.</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2012/12/shuffles-bayes-theorem-and-continuations.html">Shuffles, Bayes' theorem and continuations.</a></li>
+     
+        <li><a href="http://blog.sigfpe.com/2012/11/a-pictorial-proof-of-hairy-ball-theorem.html">A pictorial proof of the hairy ball theorem</a></li>
+     
+  </ul>
+    
+
+  
+
+
+
+
+
+
+
+ <!--
+  <p>This is a paragraph of text that could go in the sidebar.</p>
+  -->
+  
+
+
+</div></div>
+<!-- End #sidebar -->
+
+
+</div>
+<!-- End #content -->
+
+
+
+<!-- Begin #footer -->
+<div id="footer"><hr>
+  <p><!--This is an optional footer. If you want text here, place it inside these tags, and remove this comment. -->&nbsp;</p>
+
+</div>
+<!-- End #footer -->
+
+
+
+
+</body></html>
