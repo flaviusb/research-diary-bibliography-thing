@@ -1,0 +1,5 @@
+This is related to but distinct from the paper (that I can't find) which got me thinking about hyperintensional (ie, distinguishing function finer-than-equality) recursion.
+
+It is a promising lead to typing things like $(marker).
+
+The slides for the paper are in `Intensionality, Intensional Recursion, and the Gödel-Löb axiom - slides.pdf`.
