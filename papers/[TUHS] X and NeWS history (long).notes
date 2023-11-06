@@ -1,5 +1,5 @@
 Some interesting things here.
 - Separate the wire format from the abstract protocol and the api
-- Model much of the api as essentially a set of tables that one can do queries on, where the table's state has a potential visual side effect, and where the db itself has some 'distributed db' considerations
+- Model much of the api as essentially a set of tables that one can do queries on, where the table's state has a potential visual side effect, and where the db itself has some 'distributed db' considerations (eg think about 'modal types for mobile code' and coeffects stuff to think about 'location' of each of the parts of the db)
 - Double down on the 'extension+discovery' features, move everything from the base specification to 'extension number 1'
 - 'how IPC works' has a bunch of implications, and doing everything 'actually async' needs to be designed in at quite a deeper level so that you can get things like 'higher order locks' etc to avoid races
