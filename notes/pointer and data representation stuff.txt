@@ -1,0 +1,10 @@
+https://lobste.rs/s/5417dx/storing_data_pointers
+https://fpga.org/2023/11/27/risc-v-composable-extensions-for-microscaling-data-formats-for-ai-tensors/
+Bit-Stealing Made Legal
+
+IEEE floating point does have LUT
+
+...
+For pointer stuff, you can represent pointer compression, arena/index conversion, stride, alignment, ASLR, and tlb's this way, and have typesafe pointer-fucking code so you get safety
+
+For 'small strings', it isn't quite an exact thing, instead it is more like you carry around a codebook and then index into it
